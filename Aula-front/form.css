@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap');
+
+
+body {
+    font-family: 'National Park', Arial;
+    background-color: rgba(5, 66, 110, 0.514);
+    padding: 20px;
+}
+
+.inicio {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.linha {
+    display: flex; 
+    gap: 20px;
+}
+
+.form, .estr_grid{
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    font-family: 'National Park', Arial, sans-serif;
+    background-color: #05426ecc; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+table#grid {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'National Park', Arial, sans-serif;
+    border-radius: 8px;
+}
+
+table#grid th, table#grid td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+}

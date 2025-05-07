@@ -10,10 +10,10 @@
     <table class="inicio">
         <tr class="linha">
             <td class="form">
-                <form id="formulario" action="">
+                <form id="formulario" action="" method="post">
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" id="nome">
-                    <label for="fone">e-Mail</label>
+                    <label for="fone">E-mail</label>
                     <input type="text" name="e-mail" id="e-mail">
                     <label for="fone">Fone de contato</label>
                     <input type="text" name="fone" id="fone">
@@ -23,27 +23,26 @@
                     <input type="text" name="data_cadastro" id="data_cadastro">
                     <label for="tipo_contato">Selecione a forma de contato</label>
                     <input type="text" name="tipo_contato" id="tipo_contato">
+                    <button id="enviar" type="submit" >Enviar</button>
+                    <button id="limpar" type="reset">Limpar</button>
                 </form>
             </td>
             <td class="estr_grid">
                 <table id="grid">
-                    <tr id="grid_linha">
-                        <td id="g_nome">Nome</td>
-                        <td id="g_email">E-mail</td>
-                        <td id="g_fone">Fone</td>
-                        <td id="g_mensagem">Mensagem</td>
-                        <td id="g_cadastro">Cadastro</td>
-                        <td id="g_contato">Tipo contato</td>
-                    </tr>
+                    <thead>
+                        <tr id="grid_linha">
+                            <th id="g_nome">Nome</th>
+                            <th id="g_email">E-mail</th>
+                            <th id="g_fone">Fone</th>
+                            <th id="g_mensagem">Mensagem</th>
+                            <th id="g_cadastro">Cadastro</th>
+                            <th id="g_contato">Tipo contato</th>
+                        </tr>
+                    </thead>
                 </table>
             </td>
         </tr>
     </table>
-    <button id="enviar">Enviar</button>
-    <button id="limpar">Limpar</button>
 </body>
-<script>
-    var alerta = 'ola'
-    alert("mensagem de aviso" + " "+ alerta)
-    </script>
+<script type="javascript" href="form.js"></script>
 </html>
