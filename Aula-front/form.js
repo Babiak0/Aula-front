@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("formulario").addEventListener("submit", function (event) {
-        event.preventDefault(); // impede o envio do formulário
+        event.preventDefault(); 
 
-        // Captura os valores dos campos
+
         const nome = document.getElementById("nome").value;
         const email = document.getElementById("e-mail").value;
         const fone = document.getElementById("fone").value;
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const cadastro = document.getElementById("data_cadastro").value;
         const tipoContato = document.getElementById("tipo_contato").value;
 
-        // Insere os valores na tabela (grid)
+       
         const tabela = document.getElementById("grid");
         const novaLinha = tabela.insertRow();
 
@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
             <td>${tipoContato}</td>
         `;
 
-        // Limpa o formulário
         document.getElementById("formulario").reset();
     });
 });
