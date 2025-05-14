@@ -1,28 +1,35 @@
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("formulario").addEventListener("submit", function (event) {
-        event.preventDefault(); 
+function submeter(){
+  var alerta = document.getElementById('nome').value;
+  alert('Aviso: '+ alerta);
+}
+
+class Contato{
+    constructor{
+        nome = null
+        email = null
+        fone = null
+        mensagem = null
+        data_cadastro = date()
+        tipo_contato = null
+    }
 
 
-        const nome = document.getElementById("nome").value;
-        const email = document.getElementById("e-mail").value;
-        const fone = document.getElementById("fone").value;
-        const mensagem = document.getElementById("mensagem").value;
-        const cadastro = document.getElementById("data_cadastro").value;
-        const tipoContato = document.getElementById("tipo_contato").value;
+    Enviar(){
 
-       
-        const tabela = document.getElementById("grid");
-        const novaLinha = tabela.insertRow();
 
-        novaLinha.innerHTML = `
-            <td>${nome}</td>
-            <td>${email}</td>
-            <td>${fone}</td>
-            <td>${mensagem}</td>
-            <td>${cadastro}</td>
-            <td>${tipoContato}</td>
-        `;
+        if (this.nome = ''){
+            alert("ola");
+        }
 
-        document.getElementById("formulario").reset();
-    });
-});
+        nome = document.getElementById('nome').value;
+        email = document.getElementById('email').value;
+        fone = document.getElementById('fone').value;
+        mensagem = document.getElementById('mensagem').value;
+        data_cadastro = document.getElementById('data_cadastro').value;
+        tipo_contato = document.getElementById('tipo_contato').value;
+
+        alert('ola' + this.nome);
+    }
+}
+
+contato = new Contato();

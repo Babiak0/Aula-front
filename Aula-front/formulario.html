@@ -10,19 +10,26 @@
     <table class="inicio">
         <tr class="linha">
             <td class="form">
-                <form id="formulario" action="" method="post">
+                <form method="post" onsubmit="contato.Enviarsubmeter()">
+
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" id="nome">
-                    <label for="e-mail">E-mail</label>
-                    <input type="text" name="e-mail" id="e-mail">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="e-mail" id="mail">
+
                     <label for="fone">Fone de contato</label>
                     <input type="text" name="fone" id="fone">
+
                     <label for="mensagem">Escreva sua mensagem</label>
-                    <input type="text" name="mensagem" id="mensagem">
+                    <textarea style="resize: none;" name="mensagem" id="mensagem"  ></textarea>
+
                     <label for="data_cadastro">Data de cadastro</label>
                     <input type="text" name="data_cadastro" id="data_cadastro">
+
                     <label for="tipo_contato">Selecione a forma de contato</label>
-                    <input type="text" name="tipo_contato" id="tipo_contato">
+                    <input type="checkbox" name="tipo_contato" id="tipo_contato">
+
                     <button id="enviar" type="submit" >Enviar</button>
                     <button id="limpar" type="reset">Limpar</button>
                 </form>
