@@ -22,15 +22,28 @@
                     <input type="text" name="fone" id="fone">
 
                     <label for="mensagem">Escreva sua mensagem</label>
-                    <textarea style="resize: none;" name="mensagem" id="mensagem"  ></textarea>
+                    <textarea style="resize: none;" name="mensagem" id="mensagem" ></textarea>
 
                     <label for="data_cadastro">Data de cadastro</label>
                     <input type="text" name="data_cadastro" id="data_cadastro">
+                    
+                    <p>Selecione a forma de contato</p>
+                    
+                    <div class="checkbox-line">
+                        <label for="whatsapp">
+                            <input type="checkbox" name="tipo_contato" id="whatsapp" value="whatsapp">
+                            WhatsApp
+                        </label>
+                    </div>
 
-                    <label for="tipo_contato">Selecione a forma de contato</label>
-                    <input type="checkbox" name="tipo_contato" id="tipo_contato">
+                    <div class="checkbox-line">
+                        <label for="telefone">
+                            <input type="checkbox" name="tipo_contato" id="telefone" value="telefone">
+                            Telefone
+                        </label>
+                    </div>
 
-                    <button id="enviar" type="submit" >Enviar</button>
+                    <button id="enviar" type="submit">Enviar</button>
                     <button id="limpar" type="reset">Limpar</button>
                 </form>
             </td>

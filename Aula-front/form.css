@@ -24,7 +24,7 @@ body {
     border-radius: 8px;
 }
 
-form label {
+form label, p{
     display: block;
     margin-top: 10px;
     font-weight: bold;
@@ -38,6 +38,48 @@ form input[type="text"] {
     border-radius: 5px;
     box-sizing: border-box;
 }
+
+form input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#mensagem {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.checkbox-line {
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.checkbox-line label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.checkbox-line input {
+    margin: 0;
+}
+
+.checkbox-line label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
 
 button {
     font-family: 'National Park', Arial, sans-serif;
